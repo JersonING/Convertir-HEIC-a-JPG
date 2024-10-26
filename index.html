@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Convertir HEIC a JPG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertir HEIC a JPG</h1>
+        <div class="upload-section">
+            <input type="file" id="heicFileInput" accept=".heic, .HEIC">
+            <button id="convertButton">Convertir a JPG</button>
+        </div>
+        <!-- Barra de progreso -->
+        <progress id="progressBar" value="0" max="100"></progress>
+        <!-- Vista previa de la imagen -->
+        <div class="preview-section">
+            <img id="previewImage" src="" alt="Vista previa de la imagen">
+        </div>
+        <a id="downloadLink" href="#" download="imagen.jpg">Descargar JPG</a>
+    </div>
+
+    <!-- Incluye la biblioteca heic2any -->
+    <script src="https://unpkg.com/heic2any/dist/heic2any.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
